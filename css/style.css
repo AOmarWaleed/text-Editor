@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arima', cursive;
+}
+
+#main-section {
+    min-height: 100vh;
+    background-image: url(../images/default_theme-day.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.container {
+    width: 85vw;
+    margin: 70px auto;
+    padding: 70px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;  
+}
+
+.container h1 {
+    font-size: 2.5em;
+    color: #F637EC;
+    letter-spacing: .3em;
+    text-align: center;
+}
+
+.container .controlButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.container .controlButtons .left-side select {
+    background-color: #FAEA48;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.container .controlButtons .left-side select,
+.container .controlButtons .left-side input[type = 'text'] {
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+
+.container .controlButtons .right-side button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.container .controlButtons .right-side input[type="color"] {
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: linear-gradient(#F637EC,#FAEA48,#3330E4);
+}
+
+#docEara {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+
+    height: auto;
+    min-height: 400px;
+
+    outline: none;
+    border: 2px solid #FAEA48;
+
+    padding: 10px;
+    font-size: 1.2rem;
+
+    background-color: #fff;
+    color: black;
+}
+
+@media screen and (max-width: 772px) {
+    .container .controlButtons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container .controlButtons .left-side {
+        margin-bottom: 20px;
+    }
+}
+
+/*  */
+#createLink {
+    position: relative;
+}

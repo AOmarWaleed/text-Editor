@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>textEditor</title>
+</head>
+<body>
+    <section id="main-section">
+        <div class="container">
+            <h1>Doc Editor</h1>
+            <div class="controlButtons">
+                <div class="left-side">
+                    <select name="save" id="fileSelect">
+                        <option selected disabled hidden >file</option>
+                        <option value="new">New</option>
+                        <option value="saveAsTXT">
+                            Save  as TXT
+                        </option>
+                        <option value="saveAsPDF">
+                            Save as PDF
+                        </option>
+                    </select>
+                    
+                    <input type="text" name="fileName" id="fileName" value="untitiled">
+                </div>
+                <div class="right-side">
+                    <button id="bold">b</button>
+                    <button id="underLine">u</button>
+                    <button id="italic">i</button>
+                    <button id="createLink">anchor</button>
+                    <input type="color" name="userColor" id="userColor">
+                    <label for="userColor">Color</label>
+                    
+                </div>
+
+            </div>
+
+            <div contenteditable="true"  id="docEara">Start typing .......</div>
+        </div>
+
+
+        
+    </section>
+    <script src="js/html2pdf.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
